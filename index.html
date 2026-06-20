@@ -3,52 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Syed Wajeh – Web Scraping at Scale</title>
+    <title>Zaryab Haider – Web Scraping at Scale</title>
     <style>
-        body { font-family: system-ui, sans-serif; margin: 2em auto; max-width: 720px; line-height: 1.6; color: #222; }
-        h1 { font-size: 2.2em; margin-bottom: 0; }
-        .tagline { font-size: 1.2em; color: #555; margin-bottom: 2em; }
-        .case-study { background: #f9f9f9; border-left: 4px solid #2563eb; padding: 1em 1.5em; margin: 1.5em 0; border-radius: 8px; }
-        .metrics { font-weight: 600; }
-        .cta { text-align: center; margin-top: 2.5em; }
-        .cta a { background: #2563eb; color: #fff; padding: 0.8em 1.8em; border-radius: 6px; text-decoration: none; font-weight: bold; display: inline-block; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; color: #1e293b; background: #f8fafc; }
+        .container { max-width: 860px; margin: 0 auto; padding: 2rem 1.5rem; }
+        header { text-align: center; padding: 3rem 0 2rem; background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%); color: white; border-radius: 0 0 24px 24px; margin-bottom: 2rem; }
+        header h1 { font-size: 2.6rem; font-weight: 700; margin-bottom: 0.5rem; }
+        header p { font-size: 1.2rem; opacity: 0.9; max-width: 600px; margin: 0 auto; }
+        .badge { display: inline-block; background: #fbbf24; color: #1e293b; padding: 0.2rem 0.8rem; border-radius: 20px; font-weight: 600; font-size: 0.9rem; margin: 0.5rem 0.2rem; }
+        section { margin: 3rem 0; }
+        h2 { font-size: 2rem; margin-bottom: 1.5rem; border-left: 5px solid #2563eb; padding-left: 1rem; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 2rem 0; }
+        .stat-box { background: white; padding: 1.5rem; border-radius: 12px; text-align: center; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .stat-number { font-size: 2rem; font-weight: 700; color: #2563eb; }
+        .stat-label { font-size: 0.9rem; color: #64748b; }
+        .case-study { background: white; border-radius: 12px; padding: 2rem; margin: 2rem 0; box-shadow: 0 4px 12px rgba(0,0,0,0.05); display: flex; flex-wrap: wrap; gap: 1.5rem; }
+        .case-image { flex: 1 1 150px; }
+        .case-image img { width: 100%; max-width: 200px; border-radius: 8px; }
+        .case-content { flex: 3 1 300px; }
+        .case-content h3 { font-size: 1.4rem; margin-bottom: 0.5rem; color: #0f172a; }
+        .metrics { font-weight: 600; color: #2563eb; margin-top: 1rem; }
+        .btn { display: inline-block; background: #2563eb; color: white; padding: 0.6rem 1.4rem; border-radius: 6px; text-decoration: none; font-weight: 600; margin-top: 1rem; }
+        .btn-outline { background: transparent; border: 2px solid #2563eb; color: #2563eb; margin-left: 0.5rem; }
+        .cta { text-align: center; margin: 3rem 0; }
+        .cta a { background: #2563eb; color: white; padding: 1rem 2.5rem; border-radius: 8px; font-size: 1.1rem; text-decoration: none; font-weight: 600; display: inline-block; }
+        footer { text-align: center; color: #64748b; margin-top: 2rem; }
+        @media (max-width: 600px) {
+            .case-study { flex-direction: column; }
+            header h1 { font-size: 2rem; }
+        }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Zaryab Haider</h1>
+        <p>Large‑scale web scraping & API reverse engineering that works even when the site doesn’t want to be scraped.</p>
+        <div>
+            <span class="badge">Top‑Rated Plus on Upwork</span>
+            <span class="badge">20M+ records/day</span>
+            <span class="badge">99%+ success rate</span>
+        </div>
+    </header>
 
-    <h1>Syed Wajeh</h1>
-    <p class="tagline">Large‑scale web scraping & API reverse engineering that works even when the site doesn’t want to be scraped.</p>
+    <div class="container">
+        <section>
+            <h2>What I do</h2>
+            <p>I build data pipelines that collect millions of records daily from heavily protected websites (Cloudflare, DataDome, Akamai) and reverse engineer private/mobile APIs to deliver clean, structured data — on time, every time.</p>
+            <div class="stats">
+                <div class="stat-box">
+                    <div class="stat-number">20M+</div>
+                    <div class="stat-label">records extracted daily</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">complex sites scraped</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">99.5%</div>
+                    <div class="stat-label">average success rate</div>
+                </div>
+            </div>
+        </section>
 
-    <h2>What I do</h2>
-    <p>I build data pipelines that collect millions of records daily from heavily protected websites (Cloudflare, DataDome, Akamai) and reverse engineer private/mobile APIs to deliver clean, structured data—on time, every time.</p>
+        <section>
+            <h2>Case Studies</h2>
 
-    <h2>Case Studies</h2>
+            <!-- Case Study 1: TickPick / SeatGeek -->
+            <div class="case-study">
+                <div class="case-image">
+                    <img src="images/dashboard.png" alt="ticket scraping dashboard">
+                </div>
+                <div class="case-content">
+                    <h3>50k Events & 20M Ticket Prices Daily</h3>
+                    <p>Built and maintain high‑frequency scrapers for two major ticket platforms (TickPick & SeatGeek). Overcame Cloudflare and DataDome challenges with rotating residential IPs and fingerprint randomization.</p>
+                    <p class="metrics">📊 20M+ tickets/day · 99.4% success · &lt;5 min freshness</p>
+                    <a href="https://drive.google.com/file/d/1Pg8ACEFsiHZD9uokpkq-BCBpMUJ8hL7D/view?usp=sharing" class="btn" target="_blank">📁 Download sample CSV</a>
+                </div>
+            </div>
 
-    <div class="case-study">
-        <h3>20M+ product pages daily for a CDN‑protected e‑commerce target</h3>
-        <p>Client needed real‑time pricing & inventory from a global retailer that aggressively blocked bots. I engineered a headless‑browser fleet with rotating residential IPs and session management that mimicked human behavior.</p>
-        <p class="metrics">📊 20 million pages/day · 99.2% success rate · <1% block rate after 4 weeks running</p>
+            <!-- Case Study 2: Arrow Electronics -->
+            <div class="case-study">
+                <div class="case-image">
+                    <img src="images/api-icon.png" alt="api reverse engineering">
+                </div>
+                <div class="case-content">
+                    <h3>700k Electronic Parts Searches Monthly</h3>
+                    <p>Engineered an async scraper for Arrow.com that performs 700,000 part searches per month, bypassing session‑based rate limits and dynamic tokens.</p>
+                    <p class="metrics">📊 700k searches/month · 95% less manual work · Zero IP bans</p>
+                    <a href="https://drive.google.com/file/d/1OhKhLgr9NR3BfqnJNXamagDzCRIBmPvo/view?usp=sharing" class="btn" target="_blank">📁 Download sample CSV</a>
+                </div>
+            </div>
+
+            <!-- Case Study 3: DoorDash Starbucks -->
+            <div class="case-study">
+                <div class="case-image">
+                    <img src="images/pipeline.png" alt="large scale scraping">
+                </div>
+                <div class="case-content">
+                    <h3>9,000+ Starbucks Stores & 6M Products Weekly</h3>
+                    <p>Monitor full menus & pricing for every US Starbucks location on DoorDash every week. Used Playwright with geolocation simulation to avoid blocking.</p>
+                    <p class="metrics">📊 9,000+ stores · 6M products · 100% coverage</p>
+                    <a href="https://drive.google.com/file/d/1GxYyQ9BtfD1TQHaxxwncuiqrKHN4Uy9M/view?usp=sharing" class="btn" target="_blank">📁 Download sample CSV</a>
+                </div>
+            </div>
+
+            <!-- Case Study 4: Fintech API Reversal (generic) -->
+            <div class="case-study">
+                <div class="case-image">
+                    <img src="images/api-icon.png" alt="api reverse engineering">
+                </div>
+                <div class="case-content">
+                    <h3>Reverse Engineered Fintech App’s Private API</h3>
+                    <p>Decoded HMAC‑signed requests of a mobile trading app to stream real‑time price data into the client’s database. Eliminated a $4k/month vendor subscription.</p>
+                    <p class="metrics">📊 &lt;500ms latency · 99.9% uptime · One‑time build</p>
+                    <a href="#" class="btn">🔒 Full case study available upon request</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="cta">
+            <a href="http://calendly.com/zaryabhaider888" target="_blank">🚀 Book a Free 15‑Minute Scraping Assessment</a>
+        </div>
+
+        <footer>
+            <p>📧 <a href="mailto:zaryabhaider888@gmail.com">zaryabhaider888@gmail.com</a> | 
+            <a href="https://www.upwork.com/freelancers/~01a21d5c58f0c832d8" target="_blank">Upwork</a> | 
+            <a href="https://www.linkedin.com/in/zaryab-haider-8b7442372/" target="_blank">LinkedIn</a> | 
+            <a href="https://github.com/zaryabshah" target="_blank">GitHub</a></p>
+            <p style="font-size:0.9rem; margin-top:1rem;">© 2025 Zaryab Haider – All data samples are anonymised and compliant with data protection standards.</p>
+        </footer>
     </div>
-
-    <div class="case-study">
-        <h3>Reverse engineered fintech app’s private API for live market data</h3>
-        <p>A startup required real‑time stock and commodity prices that were only accessible through a mobile app with HMAC‑signed requests. I decoded the signing mechanism, extracted the hidden endpoints, and built a streaming pipeline.</p>
-        <p class="metrics">📊 <500ms end-to-end latency · 99.9% uptime · replaced $4k/month vendor with a one‑time build</p>
-    </div>
-
-    <div class="case-study">
-        <h3>Multi‑airline price monitoring at scale, bypassing dynamic fingerprinting</h3>
-        <p>Travel aggregator needed to compare fares across 50+ airline sites that used different fingerprinting and challenge solutions. I created a unified scraper framework with auto‑rotating browser fingerprints and smart proxy routing.</p>
-        <p class="metrics">📊 50+ sources · 2.8M searches/day · 97% data freshness within 5 minutes</p>
-    </div>
-
-    <p class="tagline" style="text-align:center; margin-top:2em;">I deliver data pipelines that work even when the target site doesn’t want to be scraped.</p>
-
-    <div class="cta">
-        <a href="YOUR_CALENDLY_LINK_HERE" target="_blank">Book a free 15‑minute scraping assessment</a>
-    </div>
-
-    <p style="text-align:center; margin-top:1.5em; font-size:0.9em;">Contact: syed@yourdomain.com | Upwork: <a href="#">Profile link</a> | GitHub: <a href="#">yourhandle</a></p>
-
 </body>
 </html>
